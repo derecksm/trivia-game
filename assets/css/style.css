@@ -1,0 +1,37 @@
+body {
+    background-image: url(../images/space-baby.jpg)
+}
+.page-main {
+    margin: auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 700px;
+    width:  500px;
+}
+.form-results-container {
+    margin-top: 20px;
+}
+#error-msg{
+    color: red;
+    background-color: white;
+    width: 223px;
+    margin: 15px auto;
+
+}
+
+#answerCounter{
+    color: red;
+    background-color: white;
+    width: 223px;
+    margin: 15px auto;
+}
+#timer {
+    background-color: white;
+    font-size: 25px;
+    margin: auto;
+    height: 40px;
+    width: 300px;
+}
+#showTime {
+    margin-top: 10px;
+}

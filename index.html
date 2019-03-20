@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <main class="page-main">
+        
+        <div id="timer">
+            <div id="showTime"> 15 seconds remaining</div>
+        </div>
+
+        <h1 class="page-title"> The Hardest Questions in The World</h1>
+
+        <div class="form-container">
+
+            <form class="trivia-form">
+
+                <div class="form-question-block q1">
+                    <h3 class="form-question">
+                        <label>What is the color of the sky?</label>   
+                    </h3>
+                    <div class="form-inputs">
+                        <input class="form-input" type="radio" name="choice-1" value="true"> <span class="input-val">Blue</span>
+                        <input class="form-input" type="radio" name="choice-1" value="false"> <span class="input-val">Red</span>
+                        <input class="form-input" type="radio" name="choice-1" value="false"> <span class="input-val">Green</span>
+                        <input class="form-input" type="radio" name="choice-1" value="false"> <span class="input-val">Yellow</span>
+                    </div>              
+                </div>
+
+                <div class="form-question-block q2">
+                    <h3 class="form-question">
+                        <label>What is the color of the moon?</label>   
+                    </h3>        
+                    <div class="form-inputs">
+                        <input class="form-input" type="radio" name="choice-2" value="false"> <span class="input-val">Blue</span>
+                        <input class="form-input" type="radio" name="choice-2" value="false"> <span class="input-val">Red</span>
+                        <input class="form-input" type="radio" name="choice-2" value="false"> <span class="input-val">Green</span>
+                        <input class="form-input" type="radio" name="choice-2" value="true"> <span class="input-val">white</span>
+                    </div> 
+                </div>
+
+                <div class="form-question-block q3">
+                    <h3 class="form-question">
+                        <label>Do you like pina coladas?</label>    
+                    </h3>
+                    <div class="form-inputs">
+                        <input class="form-input" type="radio" name="choice-3" value="false"> <span class="input-val">yes</span>
+                        <input class="form-input" type="radio" name="choice-3" value="true"> <span class="input-val">And dancing in the rain</span>
+                        <input class="form-input" type="radio" name="choice-3" value="false"> <span class="input-val">I'll take two</span>
+                        <input class="form-input" type="radio" name="choice-3" value="false"> <span class="input-val">no</span>
+                    </div>         
+                </div>
+
+                <div class="form-question-block q4">
+                    <h3 class="form-question">
+                        <label>How are you doing today?</label>  
+                    </h3>
+                    <div class="form-inputs">
+                        <input class="form-input" type="radio" name="choice-4" value="false"> <span class="input-val">eh</span>
+                        <input class="form-input" type="radio" name="choice-4" value="false"> <span class="input-val">I'm okay</span>
+                        <input class="form-input" type="radio" name="choice-4" value="false"> <span class="input-val">Great</span>
+                        <input class="form-input" type="radio" name="choice-4" value="true"> <span class="input-val">I love javascript</span>
+                    </div>      
+                </div>
+
+                <div class="form-question-block q5">
+                    <h3 class="form-question">
+                        <label>What is best?</label>
+                    </h3>
+                    <div class="form-inputs">
+                        <input class="form-input" type="radio" name="choice-5" value="false"> <span class="input-val">Bears</span>
+                        <input class="form-input" type="radio" name="choice-5" value="false"> <span class="input-val">Beets</span>
+                        <input class="form-input" type="radio" name="choice-5" value="false"> <span class="input-val">Battle Star Galactica</span>
+                        <input class="form-input" type="radio" name="choice-5" value="true"> <span class="input-val">All of the above</span>
+                    </div>
+                </div>
+
+                <div class="form-results-container">
+                    <button type="submit" id="form-btn">Submit Answer</button>
+                    <div id="error-msg">Please complete all answers!</div>
+                    <div id="answerCounter"></div>
+                </div>
+
+            </form>
+
+        </div>
+    </main>
+    
+    <script src="./assets/javascript/app.js"></script>
+</body>
+</html>
