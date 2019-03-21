@@ -1,34 +1,28 @@
 let gameOver = false
-
-
 let timeLeft = 15
 
-let timer = setInterval(function(){
-  document.getElementById('showTime').innerHTML = timeLeft + " seconds remaining"
+let timer = setInterval(myTimer,1000);
+
+function myTimer() {
+    document.getElementById('showTime').innerHTML = timeLeft + " seconds remaining"
   timeLeft -= 1
   
   if(timeLeft < 0){
     clearInterval(timer)
     let styler = document.querySelector('#showTime')
-    styler.innerHTML = 'You Lost!'
-    styler.style.color = 'red'
-    styler.style.backgroundColor = "white"
+    styler.innerHTML = 'OH NO!'
     
     gameOver = true
     if (gameOver === true) {
-        document.querySelector('.trivia-form').innerHTML = ''
+        // document.querySelector('.trivia-form').innerHTML = ''
+        document.getElementById('times-up-container').classList.add('show')
     }
-    
-    submitBtn.addEventListener('click', function (event) {
-        event.preventDefault()
-        checkAnswers()
-    })
   }
-}, 1000);
+}
 
-document.getElementById('error-msg').style.display = 'none'
-
-
+function stopTimer() {
+    clearInterval(timer);
+}
 
 let answers = []
 
@@ -65,6 +59,7 @@ let checkAnswers = () => {
             }
             else {
                 formComplete = true
+                stopTimer()
             }
         }
     }
@@ -98,6 +93,7 @@ submitBtn.addEventListener('click', function (event) {
     checkAnswers()
 })
 
+document.getElementById('error-msg').style.display = 'none'
 
 
 
